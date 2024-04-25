@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "perfils",
+  "info": {
+    "singularName": "perfil",
+    "pluralName": "perfils",
+    "displayName": "Perfil",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nomeCompleto": {
+      "type": "string",
+      "required": true
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "perfil"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipo_contatoes",
+  "info": {
+    "singularName": "tipo-contato",
+    "pluralName": "tipo-contatoes",
+    "displayName": "Tipo_Contato"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipo": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
